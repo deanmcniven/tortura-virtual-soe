@@ -1,0 +1,5 @@
+---
+- name: Install Development Tools
+  hosts: localhost
+  roles:
+    - intellij-idea

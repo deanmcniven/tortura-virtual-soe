@@ -1,0 +1,3 @@
+- name: intellij-idea
+  src: https://github.com/deanmcniven/ansible-intellij-idea
+  version: origin/master
