@@ -17,6 +17,9 @@
         - gnome-software-plugin-snap
         - ubuntu-software
 
+    - name: Upgrade system
+      apt: upgrade=yes
+
 
 - name: Install Development Tools
   hosts: localhost
