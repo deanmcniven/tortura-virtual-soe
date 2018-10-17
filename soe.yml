@@ -1,6 +1,5 @@
 ---
-- name: Update package list
-  hosts: localhost
+- hosts: localhost
   become: true
   tasks:
     - name: Apt Update
