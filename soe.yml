@@ -24,4 +24,5 @@
 - name: Install Development Tools
   hosts: localhost
   roles:
+    - git
     - intellij-idea
