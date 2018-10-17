@@ -1,4 +1,12 @@
 ---
+- name: Update package list
+  hosts: localhost
+  become: true
+  tasks:
+    - name: Apt Update
+      apt: update_cache=yes
+      changed_when: false
+
 - name: Install Development Tools
   hosts: localhost
   roles:
