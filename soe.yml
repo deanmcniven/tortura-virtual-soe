@@ -6,6 +6,18 @@
       apt: update_cache=yes
       changed_when: false
 
+    - name: Remove pre-installed packages
+      apt:
+        name: "{{ item }}"
+        state: absent
+      with_items:
+        - brltty
+        - gnome-software
+        - gnome-software-common
+        - gnome-software-plugin-snap
+        - ubuntu-software
+
+
 - name: Install Development Tools
   hosts: localhost
   roles:
