@@ -31,5 +31,7 @@
   roles:
     - bash
     - tmux
+    - gnome-avatar
+    - gnome-desktop
     - gnome-terminal
     - vim

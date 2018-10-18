@@ -6,6 +6,14 @@
   src: https://github.com/deanmcniven/ansible-git
   version: origin/master
 
+- name: gnome-avatar
+  src: https://github.com/deanmcniven/ansible-gnome-avatar
+  version: origin/master
+
+- name: gnome-desktop
+  src: https://github.com/deanmcniven/ansible-gnome-desktop
+  version: origin/master
+
 - name: gnome-terminal
   src: https://github.com/deanmcniven/ansible-gnome-terminal
   version: origin/master
