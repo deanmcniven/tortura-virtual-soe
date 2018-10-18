@@ -29,5 +29,6 @@
 - name: Configure Look and Feel
   hosts: localhost
   roles:
+    - bash
     - tmux
     - vim
