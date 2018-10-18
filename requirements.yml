@@ -6,6 +6,10 @@
   src: https://github.com/deanmcniven/ansible-git
   version: origin/master
 
+- name: gnome-terminal
+  src: https://github.com/deanmcniven/ansible-gnome-terminal
+  version: origin/master
+
 - name: intellij-idea
   src: https://github.com/deanmcniven/ansible-intellij-idea
   version: origin/master
