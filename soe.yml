@@ -20,9 +20,13 @@
     - name: Upgrade system
       apt: upgrade=yes
 
-
 - name: Install Development Tools
   hosts: localhost
   roles:
     - git
     - intellij-idea
+
+- name: Configure Look and Feel
+  hosts: localhost
+  roles:
+    - vim
