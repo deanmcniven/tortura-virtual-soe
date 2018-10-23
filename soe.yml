@@ -25,6 +25,7 @@
   roles:
     - git
     - intellij-idea
+    - docker
 
 - name: Install Other Software
   hosts: localhost
