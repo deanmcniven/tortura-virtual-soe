@@ -41,3 +41,7 @@
 - name: vim
   src: https://github.com/deanmcniven/ansible-vim
   version: origin/master
+
+- name: virtualbox
+  src: https://github.com/deanmcniven/ansible-virtualbox
+  version: origin/master

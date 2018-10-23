@@ -32,6 +32,7 @@
   roles:
     - chrome
     - power-management
+    - virtualbox
 
 - name: Configure Look and Feel
   hosts: localhost
