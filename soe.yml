@@ -26,6 +26,11 @@
     - git
     - intellij-idea
 
+- name: Install Other Software
+  hosts: localhost
+  roles:
+    - chrome
+
 - name: Configure Look and Feel
   hosts: localhost
   roles:
