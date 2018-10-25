@@ -12,6 +12,7 @@
         - keepassx
         - libreoffice
         - synaptic
+        - tree
         - vlc
 
 - name: Install Other Software

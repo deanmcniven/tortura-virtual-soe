@@ -1,4 +1,18 @@
 ---
+- name: Install Development Packages
+  hosts: localhost
+  become: true
+  tasks:
+    - name: Install development packages
+      apt:
+        name: "{{ item }}"
+        state: present
+      with_items:
+        - automake
+        - build-essential
+        - curl
+        - make
+
 - name: Install Development Tools
   hosts: localhost
   roles:
