@@ -1,45 +1,7 @@
 ---
-- hosts: localhost
-  become: true
-  tasks:
-    - name: Apt Update
-      apt: update_cache=yes
-      changed_when: false
 
-    - name: Remove pre-installed packages
-      apt:
-        name: "{{ item }}"
-        state: absent
-      with_items:
-        - brltty
-        - gnome-software
-        - gnome-software-common
-        - gnome-software-plugin-snap
-        - ubuntu-software
+- import_playbook: clean-and-update.yml
+- import_playbook: development-tools.yml
+- import_playbook: other-software.yml
+- import_playbook: look-and-feel.yml
 
-    - name: Upgrade system
-      apt: upgrade=yes
-
-- name: Install Development Tools
-  hosts: localhost
-  roles:
-    - git
-    - intellij-idea
-    - docker
-
-- name: Install Other Software
-  hosts: localhost
-  roles:
-    - chrome
-    - power-management
-    - virtualbox
-
-- name: Configure Look and Feel
-  hosts: localhost
-  roles:
-    - bash
-    - gnome-avatar
-    - gnome-desktop
-    - gnome-terminal
-    - tmux
-    - vim

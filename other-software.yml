@@ -1,0 +1,8 @@
+---
+- name: Install Other Software
+  hosts: localhost
+  roles:
+    - chrome
+    - power-management
+    - virtualbox
+

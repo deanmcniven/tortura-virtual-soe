@@ -1,0 +1,10 @@
+---
+- name: Configure Look and Feel
+  hosts: localhost
+  roles:
+    - bash
+    - gnome-avatar
+    - gnome-desktop
+    - gnome-terminal
+    - tmux
+    - vim
