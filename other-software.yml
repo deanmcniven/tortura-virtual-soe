@@ -11,6 +11,9 @@
         - bzip2
         - flashplugin-installer
         - gimp
+        - gstreamer1.0-gtk3
+        - gstreamer1.0-libav
+        - gstreamer1.0-fluendo-mp3
         - keepassx
         - libreoffice
         - synaptic
