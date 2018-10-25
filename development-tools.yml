@@ -8,10 +8,12 @@
         name: "{{ item }}"
         state: present
       with_items:
+        - ack-grep
         - automake
         - build-essential
         - curl
         - make
+        - wxhexeditor
 
 - name: Install Development Tools
   hosts: localhost
