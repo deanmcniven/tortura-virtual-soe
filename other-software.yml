@@ -1,4 +1,19 @@
 ---
+- name: Install Additional Packages
+  hosts: localhost
+  become: true
+  tasks:
+    - name: Install packages
+      apt:
+        name: "{{ item }}"
+        state: present
+      with_items:
+        - gimp
+        - keepassx
+        - libreoffice
+        - synaptic
+        - vlc
+
 - name: Install Other Software
   hosts: localhost
   roles:
