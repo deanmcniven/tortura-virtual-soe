@@ -9,14 +9,13 @@
 
     - name: Remove pre-installed packages
       apt:
-        name: "{{ item }}"
+        pkg:
+          - brltty
+          - gnome-software
+          - gnome-software-common
+          - gnome-software-plugin-snap
+          - ubuntu-software
         state: absent
-      with_items:
-        - brltty
-        - gnome-software
-        - gnome-software-common
-        - gnome-software-plugin-snap
-        - ubuntu-software
 
     - name: Upgrade system
       apt: upgrade=yes

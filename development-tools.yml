@@ -5,15 +5,14 @@
   tasks:
     - name: Install development packages
       apt:
-        name: "{{ item }}"
+        pkg:
+          - ack
+          - automake
+          - build-essential
+          - curl
+          - make
+          - wxhexeditor
         state: present
-      with_items:
-        - ack
-        - automake
-        - build-essential
-        - curl
-        - make
-        - wxhexeditor
 
 - name: Install Development Tools
   hosts: localhost
