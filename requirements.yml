@@ -14,6 +14,18 @@
   src: https://github.com/deanmcniven/ansible-git
   version: origin/master
 
+- name: go-junit-report
+  src: https://github.com/deanmcniven/ansible-go-junit-report
+  version: origin/master
+
+- name: go-metalinter
+  src: https://github.com/deanmcniven/ansible-go-metalinter
+  version: origin/master
+
+- name: golang
+  src: https://github.com/deanmcniven/ansible-golang
+  version: origin/master
+
 - name: gnome-avatar
   src: https://github.com/deanmcniven/ansible-gnome-avatar
   version: origin/master

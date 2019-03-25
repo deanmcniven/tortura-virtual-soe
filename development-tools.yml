@@ -20,4 +20,7 @@
     - git
     - intellij-idea
     - docker
+    - golang
+    - go-junit-report #Must run after golang
+    - go-metalinter
 
